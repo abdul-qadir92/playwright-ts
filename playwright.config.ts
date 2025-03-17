@@ -42,12 +42,13 @@ export default defineConfig({
       },
     },
     {
-      name: 'tests',
+      name: 'samsung-chrome',
       testDir: './tests/ui/',
       testMatch: '**/example.spec.ts',  // Match the actual test specs
       use: {
         browserName: 'chromium',
       },
+      dependencies:['setup']
     },
   ],
 
