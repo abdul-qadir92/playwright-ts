@@ -4,7 +4,10 @@
   "description": "Playwright TypeScript with BStack",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm update browserstack-node-sdk"
+    "postinstall": "npm update browserstack-node-sdk",
+    "test-proj": "npx browserstack-node-sdk playwright test --project=samsung-chrome --headed",
+    "test": "npx browserstack-node-sdk playwright test --headed",
+    "test-tag": "npx browserstack-node-sdk playwright test -g @link --headed"
   },
   "author": "A Qadir",
   "license": "ISC",
